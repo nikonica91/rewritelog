@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nikonica91-rewritelog"
+version = "0.1.0"
+description = "沿改写链逐步比对原查询与改写后查询，标出被丢失的限定词与实体"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "nikonica91" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://nikonica91.github.io"
+Repository = "https://github.com/nikonica91/rewritelog"
+Issues = "https://github.com/nikonica91/rewritelog/issues"
+
+[project.scripts]
+rewritelog = "rewritelog:main"
+
+[tool.setuptools]
+py-modules = ["rewritelog"]
